@@ -25,10 +25,34 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Border BorderBrush="#FFA22E2A" BorderThickness="3,3,3,3" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="3" Height="100px" CornerRadius="25,25,25,25">
+            <Grid HorizontalAlignment="Center" Width="400">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/Images/question.jpg" Width="75" Grid.Column="0"/>
+                <Image Source="/Images/question.jpg" Width="70" Grid.Column="1"/>
+                <Image Source="/Images/question.jpg" Width="70" Grid.Column="2"/>
+                <Image Source="/Images/question.jpg" Width="70" Grid.Column="3"/>
+                <Image Source="/Images/question.jpg" Width="70" Grid.Column="4"/>
+            </Grid>
+        </Border>
         <Button Grid.Column="5" Grid.Row="1" Height="35px"  Width="80px" Background="#FFFDE4C5" BorderBrush="#ffd9b88e" BorderThickness="4px">Losuj</Button>
         <Label Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="2" FontSize="20" Foreground="#FFA22E2A" FontWeight="Bold" HorizontalAlignment="Center">Suma punktów</Label>
         <Label Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="2" FontSize="20" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Bottom">0</Label>
         <Button Grid.Column="2" Grid.Row="4" Height="35px"  Width="80px" Background="#FFFDE4C5" BorderBrush="#ffd9b88e" BorderThickness="4px">Nowa Gra</Button>
         <Button Grid.Column="4" Grid.Row="4" Height="35px"  Width="80px" Background="#FFFDE4C5" BorderBrush="#ffd9b88e" BorderThickness="4px">Zapisz Wynik</Button>
+        <DataGrid Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Rzut"/>
+                <DataGridTextColumn Header="Wylosowane oczka"/>
+                <DataGridTextColumn Header="Suma pkt"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </Grid>
 </Window>
